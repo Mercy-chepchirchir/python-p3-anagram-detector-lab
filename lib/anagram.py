@@ -6,6 +6,7 @@ class Anagram:
     def match(self, words):
         return [w for w in words if self.is_anagram(w)]
 
+
     def is_anagram(self, candidate):
         candidate_lower = candidate.lower()
         return candidate_lower != self.word and sorted(candidate_lower) == sorted(self.word)
